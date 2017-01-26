@@ -37,7 +37,7 @@ section {
   position: relative;
   width: 100%;
   height: 100%;
-  background-image: url("http://localhost:3000/images/mac2.jpg"); opacity: .6;
+  background-image: url("images/mac2.jpg"); opacity: .6;
   background-size: cover;
   /*background-repeat: no-repeat;*/
   display: table;
@@ -150,7 +150,7 @@ body {
 #homeLink {
   position: absolute;
   bottom: 0;
-  right: 5px;  
+  right: 5px;
 }
 
 /*
@@ -185,7 +185,7 @@ body {
   border: 1px solid white;
   border-radius: 10px;
   background-color: white;
-  opacity: 0;
+  opacity: .8;
 }
 
 #weatherStart {
@@ -213,7 +213,7 @@ body {
   left: 0;
   border: 1px solid white;
   border-radius: 10px;
-  opacity: 0;
+  opacity: .7;
 }
 
 .weatherIcons {
