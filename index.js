@@ -5,6 +5,8 @@ var data = {};
 var pg = require('pg');
 var bodyParser = require('body-parser');
 
+var port = process.env.PORT || 3000
+
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
@@ -79,6 +81,6 @@ app.get('*', function(req, res){
   res.render('help');
 })
 
-app.listen(3000, function(){
+app.listen(port, function(){
   console.log("Listening on port 3000");
 })
