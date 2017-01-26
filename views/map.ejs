@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- <script src="script.js"></script> -->
+</head>
+<body id ="mapBody">
+
+
+
+    <!-- MAP HERE -->
+
+  <iframe width="100%" height="450" frameborder="0" style="border:0"
+    src='https://www.google.com/maps/embed/v1/directions?key=AIzaSyAAMK5x_3JxFivWCISYqsK4cr-cVLG5YGQ&units=imperial&origin=<%= data.start %>&destination=<%= data.end %>'></iframe>
+
+
+
+  <!-- Weather Here -->
+  <div id = "weatherBoth">
+
+    <!-- Starting Point Weather Here -->
+    <div id ="weatherStart">
+      <h1 class = "locationNames"> <%= data.start %> </h1>
+      <h2 class = "beforePic"><%= data.startWeather[1] %></h2>
+      <img class = "weatherIcons" src= <%= data.startWeather[4] %>>
+      <h3 class = "highTemp">High: <%= data.startWeather[2] %>°F</h3>
+      <h3 class = "lowTemp">Low: <%= data.startWeather[3] %>°F</h3>
+    </div>
+
+    <!-- Ending Point Weather Here -->
+    <div id ="weatherEnd">
+      <h1 class = "locationNames"> <%= data.end %> </h1>
+      <h2 class = "beforePic"><%= data.endWeather[1] %></h2>
+      <img class = "weatherIcons" src=<%= data.endWeather[4] %>>
+      <h3 class = "highTemp">High: <%= data.endWeather[2] %>°F</h3>
+      <h3 class = "lowTemp">Low: <%= data.endWeather[3] %>°F</h3>
+    </div>
+
+    <!-- Message Here -->
+    <div id = "weatherMessage">
+      <h1 id = "weatherMessageContent"> Safe Travels! </h1>
+    </div>
+
+  </div> <!-- Weather Ends Here -->
+  <a href="/form" id = "againLink">Want a Different Location?</a>
+  <a href="/" id = "homeLink">Home</a>
+
+  <script
+src="http://code.jquery.com/jquery-3.1.1.min.js"
+integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+    </body>
+</html>

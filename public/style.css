@@ -1,0 +1,241 @@
+@import url("bootstrap-3.3.7-dist/css/bootstrap.min.css");
+
+#portfolioBody {
+  margin: 0;
+}
+
+.btn-lg, .btn-primary {
+  margin-right: 10px;
+}
+
+section {
+  width: 100%;
+  padding: 0;
+  display: table;
+  margin: 0;
+  max-width: none;
+  background-color: gray;
+  height: 100vh;
+}
+
+#name{
+  font-family: Arial;
+  margin: 0;
+  font-size: 40px;
+}
+
+#name, #name-content {
+  color: red;
+  font-weight: bolder;
+}
+
+#name-content {
+  font-size: 20px;
+}
+
+#mainPic {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-image: url("http://localhost:3000/images/mac2.jpg"); opacity: .6;
+  background-size: cover;
+  /*background-repeat: no-repeat;*/
+  display: table;
+}
+
+#mainPic-content {
+  position: relative;
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+}
+
+#projects {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-color: #bbb;
+}
+
+#me {
+  height: 25vh;
+}
+
+#contact {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-color: #aaa;
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+}
+
+#contact-links {
+  list-style-type: none;
+}
+
+#contact-links li {
+  display: inline;
+  text-decoration: none;
+  margin: 5px;
+}
+
+a {
+  color: inherit;
+}
+a:hover {
+  color: red;
+}
+
+.row {
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-top: 1%;
+  padding-bottom: 1%;
+}
+
+.thumbnail{
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+/*.row {
+  display: table;
+}*/
+
+
+.row > .resize {
+  float: none;
+  display: table-cell;
+  vertical-align: top;
+}*/
+/*#contact-links li::after {
+  content: "  |"
+}*/
+
+
+body {
+  margin: 5px 0 0;
+  font-family: Arial;
+}
+
+#formBody {
+  background-color: skyblue;
+}
+
+#formContent {
+    position: fixed;
+    width: 30%; /* Set your desired with */
+    z-index: 2; /* Make sure its above other items. */
+    top: 50%;
+    left: 50%;
+    margin-top: -10%; /* Changes with height. */
+    margin-left: -10%; /* Your width divided by 2. */
+
+    text-align: center;
+    border: 1px solid white;
+    border-radius: 17px;
+    background-color: white;
+    padding: 7px;
+    font-size: 20px;
+}
+
+#againLink {
+  position: absolute;
+  bottom: 0;
+  left: 5px;
+}
+
+#homeLink {
+  position: absolute;
+  bottom: 0;
+  right: 5px;  
+}
+
+/*
+#formContent {
+  position: fixed;
+  top: 35%;
+  left: 30%;
+  text-align: center;
+  border: 1px solid white;
+  border-radius: 17px;
+  background-color: white;
+  padding: 7px;
+  font-size: 20px;
+}
+*/
+#weatherButton {
+  font-size: 15px;
+}
+
+#mapBody {
+  background-color: skyblue;
+}
+
+#weatherBoth {
+  text-transform: capitalize;
+  height: 50vh;
+  background-color: skyblue; opacity: .8;
+}
+
+#weatherStart, #weatherEnd {
+  display: inline-block;
+  border: 1px solid white;
+  border-radius: 10px;
+  background-color: white;
+  opacity: 0;
+}
+
+#weatherStart {
+  padding-right: 5%;
+  padding-left: 5%;
+}
+
+#weatherEnd {
+  padding-right: 5%;
+  padding-left: 5%;
+  float: right;
+}
+
+#weatherMessageContent {
+  margin: 0;
+}
+
+#weatherMessage {
+  background-color: white;
+  position: absolute;
+  padding: 5px;
+  padding-bottom: 0;
+  bottom: 0;
+  /*left: 40%;*/
+  left: 0;
+  border: 1px solid white;
+  border-radius: 10px;
+  opacity: 0;
+}
+
+.weatherIcons {
+  float: right;
+}
+
+.afterPic {
+  clear: right;
+}
+
+.beforePic, img {
+  display: inline;
+}
+
+.locationNames {
+  margin-bottom: 10px;
+}
+
+.highTemp {
+  margin-bottom: 12px;
+}
+
+.lowTemp {
+  margin-top: 0;
+}

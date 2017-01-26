@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body id = "formBody">
+  <div id = "formWrapper">
+    <div id = "formContent">
+      <h2>Enter Starting/Destination Locations</h2>
+
+      <form action="\map" method = "POST">
+        <label for="Starting">Starting Location</label>
+        <input type="text" name = "startHere" placeholder="City, State...">
+        <br><br>
+        <label for="Destination">Destination</label>
+        <input type="text" name = "endHere" placeholder="City, State...">
+        <br><br>
+        <button type = "submit" id = "weatherButton">Search</button>
+      </form>
+
+    </div> <!-- form Content -->
+  </div> <!-- form Wrapper -->
+  <style src = "script.js"></style>
+</body>
+</html>
